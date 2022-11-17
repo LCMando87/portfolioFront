@@ -1,11 +1,56 @@
 .destacado{color:Blue; font-weight:bold}
-aside {Background-color:blue; color:white}
+aside {Background-color:silver; color:black}
 .right {
   position: absolute;
   right: 0px;
   width: 300px;
   border: 3px solid #73AD21;
-  padding: 10px;
-}
-*{margin:1in}
-h1{background-image: "res\RioLimay.jpg";}
+  padding: 10px;}
+
+body{margin:1cm}
+h1 {background-image: "res\RioLimay.jpg"; padding: 1pt-; border-style:solid; border:3px; border-color:black}
+#Experiencia {background-color: rgb(239, 239, 239); color:black}
+.cropped {
+  width: 150px; 
+  height: 150px; 
+  overflow: hidden;
+  }
+  
+  .cropped img {
+  margin: -150px 0px 0px -150px;
+  }
+
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle {
+    stroke: #4CC790;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+
+  .percentage {
+    fill: rgb(81, 80, 80);
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+  .tituloSkill{
+    fill: rgb(81, 80, 80);
+    margin: 10px auto;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: top;
+  }
