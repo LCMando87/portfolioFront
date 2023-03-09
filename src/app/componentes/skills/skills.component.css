@@ -1,0 +1,56 @@
+  /* Skills */
+  
+  #Skills {background-color: rgb(239, 239, 239); color:black}
+  
+    .skillBox {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .circular-chart {
+      display: block;
+      margin: 10px auto;
+      max-width: 80%;
+      max-height: 250px;
+    }
+
+    .circleEmpty {
+      stroke: rgb(239, 239, 239);
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+    }
+    .circle {
+      stroke: #4CC790;
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+    }
+    
+    @keyframes progress {
+      0% {
+        stroke-dasharray: 0 100;
+      }
+    }
+  
+    .percentage {
+      fill: rgb(81, 80, 80);
+      font-family: sans-serif;
+      font-size: 0.5em;
+      text-anchor: middle;
+    }
+    .Skill{
+      height: 270px;
+      width: 250px;
+    }
+    .tituloSkill{
+      fill: rgb(81, 80, 80);
+      /*margin: 10px auto;*/
+      width: 250px;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 15px;
+      text-anchor: top;
+    }

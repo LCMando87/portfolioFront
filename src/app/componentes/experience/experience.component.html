@@ -1,0 +1,14 @@
+<div class="Caja" id="Experiencia">
+	<h1 align="left">Experiencia</h1>
+	<span class="ExpBox">
+		<div *ngFor="let experiencia of experiencias">
+			<div class="Trabajo">
+				<hr>
+				<h4>{{experiencia.lugar}}</h4>
+				<p>{{experiencia.anoDesde}} a {{experiencia.anoHasta}}</p>
+				<p class="puesto">{{experiencia.puesto}}</p>
+				<p>{{experiencia.tareas}}</p>
+			</div>
+		</div>
+	</span>
+</div>

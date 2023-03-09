@@ -1,0 +1,22 @@
+<div class="login">
+	<form [formGroup]="form" class="custom-form" method="post">
+		<fieldset>
+			<h1>Login</h1>
+			<input
+			type="email"
+			name="email"
+			formControlName="Email"
+			placeholder="email"
+			required="required"
+			/>
+			<input
+			type="password"
+			name="password"
+			formControlName="password"
+			placeholder="Password"
+			required="required"
+			/>
+		</fieldset>
+		<button type="submit" class="btn btn-success"  (click)="login()">Ingresar</button>
+	</form>
+ </div>
