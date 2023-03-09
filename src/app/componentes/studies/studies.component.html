@@ -1,8 +1,14 @@
 <div class="Caja" id="Educacion">	
 	<h1 align="left">Educación</h1>
-	<div class="Estudio">
-		<h4>Tal lugar</h4>
-		<p>año a año <span>carrera</span></p>
-		<p>descripción</p>
-	</div>
+	<span class="StdBox">
+		<div *ngFor="let estudio of estudios">
+			<div class="Estudio">
+				<hr>
+				<h4>{{estudio.establecimiento}}</h4>
+				<p>{{estudio.anoDesde}} a {{estudio.anoHasta}}</p>
+				<p>{{estudio.carrera}}</p>
+				<p>{{estudio.descripcion}}</p>
+			</div>
+		</div>
+	</span>
 </div>
